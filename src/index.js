@@ -1,5 +1,4 @@
 let debug = require('debug')('net-reconnect')
-let NetKeepAlive = require('net-keepalive')
 
 class NetReconnect {
 
@@ -35,8 +34,6 @@ class NetReconnect {
     }
 
     this._socket.setKeepAlive(true, this._keepAliveDelay)
-    NetKeepAlive.setKeepAliveInterval(this._socket, this._keepAliveInterval)
-    NetKeepAlive.setKeepAliveProbes(this._socket, this._keepAliveProbes)
 
     debug('online')
   }
