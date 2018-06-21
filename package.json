@@ -24,7 +24,6 @@
   "homepage": "https://github.com/cloud-automation/node-net-reconnect#readme",
   "dependencies": {
     "debug": "^2.6.4",
-    "net-keepalive": "git:github.com/matonga/node-net-keepalive.git#0e6220f27869061dcbab9803f9d10501b81fa095"
   },
   "devDependencies": {
     "mocha": "^3.3.0",
